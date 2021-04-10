@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tool="http://schemas.android.com/tools"
+    style="@style/BottomSheet"
+    android:paddingBottom="8dp">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_video"
+        style="@style/BottomSheetItem"
+        android:drawableStart="@drawable/video"
+        android:drawableLeft="@drawable/video"
+        android:text="Choose Video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_audio"
+        style="@style/BottomSheetItem"
+        android:drawableStart="@drawable/audio"
+        android:drawableLeft="@drawable/audio"
+        android:text="Choose Audio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_video" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_image"
+        style="@style/BottomSheetItem"
+        android:layout_marginTop="8dp"
+        android:drawableStart="@drawable/picture"
+        android:drawableLeft="@drawable/picture"
+        android:text="Choose Picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_audio" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_camera"
+        style="@style/BottomSheetItem"
+        android:drawableStart="@drawable/camera"
+        android:drawableLeft="@drawable/camera"
+        android:text="Open Camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_image" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/BottomSheetItem"
+        android:drawableStart="@drawable/voicerecorder"
+        android:drawableLeft="@drawable/voicerecorder"
+        android:text="Record Audio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_camera" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

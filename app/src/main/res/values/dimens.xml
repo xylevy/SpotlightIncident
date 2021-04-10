@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+
+    <dimen name="newsMoreTextSize">12sp</dimen>
+
+    <!-- weather row dimen -->
+    <!-- weather icon size-->
+
+</resources>

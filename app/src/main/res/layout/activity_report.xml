@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:background="@drawable/splash_bg"
+    android:focusable="true"
+    tools:context=".Report">
+
+
+    <TextView
+        android:id="@+id/etTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:text="Title"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tvSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etTitle"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="15dp"
+        android:text="Issue type"
+        android:textStyle="bold"/>
+
+    <Spinner
+        android:id="@+id/issueSpinner"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tvSpinner"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        />
+
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/issueSpinner"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        style="@style/modifiedEditText"
+        android:background="@drawable/rounded_layout"
+        android:ems="10"
+        android:maxLength="30"
+        android:maxLines="6"
+        android:minLines="5"
+        android:scrollbars="vertical"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:hint="Description"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/etContact"
+        android:background="@drawable/rounded_layout"
+        style="@style/modifiedEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/etDescription"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Contact"
+        android:autofillHints="" />
+    <EditText
+        android:id="@+id/etDate"
+        android:background="@drawable/rounded_layout"
+        style="@style/modifiedEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/etContact"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:inputType="date"
+        android:hint="Date"
+        android:autofillHints="" />
+
+
+
+    <LinearLayout
+        android:id="@+id/locLinear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/etDate">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/simpleSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text=" Send My Location                          "
+            android:textOff="No"
+            android:textOn="Yes"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mediaLayout"
+        android:layout_below="@id/locLinear"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Add media"
+        android:textStyle="bold"/>
+
+
+    <ImageView
+        android:id="@+id/IdProf"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/rounded_layout"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/ic_add_photo" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/onboarding_button"
+        android:text="  SUBMIT INCIDENT  "
+        android:textColor="@color/colorBlack"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/mediaLayout"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+</RelativeLayout>

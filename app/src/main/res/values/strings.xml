@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Spotlight Incident</string>
+    <string name="logged_in_key">IS_LOGIN</string>
+    <string name="file_thumbnail">File thumbnail</string>
+    <string name="uri">Uri : %1$s</string>
+    <string name="size">Size :  %1$s</string>
+    <string name="mime">Mime: %1$s</string>
+    <string name="type">Type : %1$s</string>
+    <string name="bucketname">BucketName : %1$s</string>
+    <string name="share_log">Share Log</string>
+    <string name="date">Date : %1$s</string>
+    <string name="location">Location : %1$s</string>
+    <string name="incident">Incident : %1$s</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
