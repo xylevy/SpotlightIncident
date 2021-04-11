@@ -12,6 +12,12 @@ To be able to build and run the app you will need to -:
 - To enable the use of Google Maps get an [API Key](https://developers.google.com/maps/documentation/android-sdk/get-api-key) and add it to the `local.properties` file. Check instructions [here](https://developers.google.com/maps/documentation/android-sdk/get-api-key#add_key)
 - Sync the project.
 
+### Attribution
+
+<img src="https://media.flaticon.com/dist/min/img/logo/flaticon_negative.svg" width=25% height=25%>
+
+Icons made by Freepik from [Flaticon](https://www.flaticon.com)
+
 ### LICENSE
 
 MIT
